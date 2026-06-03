@@ -232,11 +232,25 @@
             color: var(--color-canvas-parchment);
         }
 
+        .form-container {
+            width: 100%;
+            height: 900px;
+            border: 3px solid var(--color-midnight-ink);
+            margin-top: 24px;
+            background: #ffffff;
+        }
+        .form-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         @media (max-width: 768px) {
             h1.main-title { font-size: 52px; }
             .step-card > h2 { font-size: 40px; }
             .tabs { gap: 8px; }
             .tab-btn { padding: 12px 20px; }
+            .form-container { height: 600px; }
         }
     </style>
 </head>
@@ -249,13 +263,12 @@
         </header>
 
         <section class="step-card">
-            <div class="step-number">1</div>
             <h2>Boas-vindas</h2>
-            <p>Este guia foi desenhado para facilitar a sua avaliação. Siga a jornada: entenda o método no vídeo, consulte o resumo, estude os cenários reais nas abas de dossiês e, por fim, responda ao instrumento de avaliação.</p>
+            <p>Este guia foi desenhado para facilitar a sua avaliação. Siga a jornada: 1) entenda o método no vídeo, 2) consulte o resumo, 3) estude os cenários reais nas abas de dossiês e, por fim, 4) responda ao instrumento de avaliação.</p>
         </section>
 
         <section class="step-card">
-            <div class="step-number">2</div>
+            <div class="step-number">1</div>
             <h2>O Método</h2>
             <p><strong>Recomendamos que assista atentamente.</strong> Ele detalha a temática que será o foco da sua opinião técnica.</p>
             <div class="video-container">
@@ -264,7 +277,7 @@
         </section>
 
         <section class="step-card">
-            <div class="step-number">3</div>
+            <div class="step-number">2</div>
             <h2>Resumo do Framework</h2>
             <p>Seu mapa rápido para os conceitos estruturados. Utilize o scroll para navegar pelo documento condensado abaixo.</p>
             <div class="content-box">
@@ -273,7 +286,7 @@
         </section>
 
         <section class="step-card">
-            <div class="step-number">4</div>
+            <div class="step-number">3</div>
             <h2>Cenários Práticos</h2>
             <p>Selecione uma aba abaixo para ler o dossiê correspondente. Eles ilustram a aplicação do framework.</p>
             
@@ -303,15 +316,23 @@
         </section>
 
         <section class="step-card">
-            <div class="step-number">5</div>
+            <div class="step-number">4</div>
             <h2>Instrumento de Avaliação</h2>
             <div class="alert-box">
                 <strong>Importante:</strong> Não há uma correspondência direta ou obrigatória entre a quantidade de dimensões apresentadas no questionário e a estrutura original do método avaliado. As dimensões do formulário organizam a coleta de dados da pesquisa.
             </div>
-            <p>Sua avaliação técnica será feita pelo formulário. O progresso é salvo automaticamente.</p>
-            <a href="https://forms.google.com/" target="_blank" class="btn-filled">
-                Responder Avaliação
-            </a>
+            <p>Sua avaliação técnica será feita diretamente pelo formulário incorporado abaixo. O progresso é salvo automaticamente.</p>
+            
+            <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrl1hE7gGOQhBDy1DDId4jU365oU6Db2CQWW-Ot-MKNs2aYQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+
+            <p style="margin-top: 24px; font-size: 16px;">
+                Caso encontre problemas para preencher o formulário na página, você pode 
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScrl1hE7gGOQhBDy1DDId4jU365oU6Db2CQWW-Ot-MKNs2aYQ/viewform?usp=sf_link" target="_blank" style="color: var(--color-electric-blue); font-weight: bold; text-decoration: underline;">
+                    abrir o formulário diretamente em uma nova aba
+                </a>.
+            </p>
         </section>
 
     </div>
